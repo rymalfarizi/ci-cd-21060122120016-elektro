@@ -1,0 +1,60 @@
+.complete-icon {
+  fill: rgb(4, 201, 4);
+}
+
+.complete-icon:hover {
+  fill: rgb(6, 141, 6);
+}
+
+.delete-icon {
+  fill: red;
+}
+
+.delete-icon:hover {
+  fill: rgb(207, 12, 12);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-content button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.modal-content button:last-of-type {
+  background-color: red;
+  color: white;
+}
+
+.modal-content button:last-of-type:hover {
+  background-color: rgb(207, 12, 12);
+}

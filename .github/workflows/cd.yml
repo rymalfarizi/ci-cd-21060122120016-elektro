@@ -3,34 +3,28 @@ name: Continuous Deployment
 on:
   push:
     branches:
-      - main  # Menentukan bahwa workflow ini berjalan pada event push ke branch 'main'
+      - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Menentukan environment tempat workflow dijalankan (Ubuntu terbaru)
+    runs-on: ubuntu-latest
 
     steps:
-      # Langkah 1: Checkout kode dari repository
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Langkah 2: Setup Node.js environment (versi 16)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16  # Versi Node.js yang digunakan
+          node-version: 16
 
-      # Langkah 3: Build aplikasi (ini menyesuaikan dengan project)
+      - name: Install dependencies
+        run: npm install
+
       - name: Build project
-        run: |
-          npm install  # Install dependensi proyek
-          npm run build  # Build proyek (sesuai dengan perintah build di package.json)
-          mkdir -p out  # Buat direktori 'out' untuk hasil build
-          echo "Hello from CI/CD Deployment" > out/index.html  # Contoh file hasil deployment (sesuaikan dengan proyekmu)
+        run: npm run build
 
-      # Langkah 4: Deploy ke GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # Menggunakan action untuk deploy ke GitHub Pages
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Menggunakan token GitHub otomatis untuk akses repo
-          publish_dir: ./out  # Direktori hasil build yang akan di-deploy (sesuaikan jika berbeda)
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

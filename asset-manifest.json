@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rymalfarizi.github.io/ci-cd-21060122120016-elektro/static/css/main.58a5be6e.css",
+    "main.js": "/rymalfarizi.github.io/ci-cd-21060122120016-elektro/static/js/main.03621245.js",
+    "index.html": "/rymalfarizi.github.io/ci-cd-21060122120016-elektro/index.html",
+    "main.58a5be6e.css.map": "/rymalfarizi.github.io/ci-cd-21060122120016-elektro/static/css/main.58a5be6e.css.map",
+    "main.03621245.js.map": "/rymalfarizi.github.io/ci-cd-21060122120016-elektro/static/js/main.03621245.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58a5be6e.css",
+    "static/js/main.03621245.js"
+  ]
+}

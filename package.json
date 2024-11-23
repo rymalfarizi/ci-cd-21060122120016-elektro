@@ -1,7 +1,7 @@
 {
-  "homepage": "https://Letsgobois24.github.io/react-todo-list",
+  "homepage": "https:/rymalfarizi.github.io/ci-cd-21060122120016-elektro",
   "name": "react-todo-list",
-  "version": "0.1.0",
+  "version": "ci-cd-21060122120016-elektro",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -44,5 +44,13 @@
     "jest": "^27.5.1",
     "supertest": "^7.0.0",
     "@babel/plugin-proposal-private-property-in-object": "^7.18.6"
-  }
+  },
+  "description": "## How to Run the Website",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

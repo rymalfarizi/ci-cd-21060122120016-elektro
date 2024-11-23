@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && git config user.name 'GitHub Actions' && git config user.email 'actions@github.com'",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
